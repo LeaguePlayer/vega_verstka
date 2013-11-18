@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>index.html</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Marmelad&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style/reset.css" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="/js/jquery.color.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="/js/jquery.mCustomScrollbar.js"></script>
+        <link rel="stylesheet" type="text/css" href="/js/jquery.mCustomScrollbar.css"/>
+        <script src="/js/slide.js"></script>
+        <!--[if IE]><link href="/style/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    </head>
+
+    <body scroll="no">
+        <div class="width_920">
+                <a class="logo" href="/"></a>
+                <div class="header_menu">
+                    <a class="opt current" href="#">Опт</a>
+                    <a class="roznica" href="">Розница</a>
+                    <a class="auth" href="#">Авторизация ></a>
+                </div>
+                <div class="width_920">
+                    <div class="content">
+                        <div class="content_top">
+                            <div class="navigation noleft">
+                                <a href="index.html" class="home"></a>
+                                <a href="accessories.html"><span>Линолеум</span></a>
+                                <a href="#"><span>Ламинат</span></a>
+                                <a href="#"><span>Паркет</span></a>
+                                <a href="#"><span>ПВХ плитка</span></a>
+                                <a href="#"><span>Паласы и ковпики</span></a>
+                                <a href="#"><span>Пробковые покрытия</span></a>
+                                <a href="#"><span>Пороги, плинтусы</span></a>
+                                <a href="#"><span>Строй материалы</span></a>
+                                <a href="cart.html" class="cart opened"><span class="total">0</span></a>
+                            </div>
+                        </div>
+                        <div class="content_catalog">
+                            <div class="shadow"></div>
+                            <div class="categories">
+                                <div class="search-box">
+                                    <form>
+                                        <input type="text" placeholder="Поиск..." class="search">
+                                        <button type="submit">Искать<img src="/style/img/search.png"></button>
+                                    </form>
+                                </div>
+                                <div class="cart_head">
+                                    <div class="breadcrumbs">
+                                        <ul>
+                                            <li><a href="">Главная</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Линолеум</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Полистиль</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Тайфун</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Аладин1</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Корзина</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="favorites">
+                                        <h2>Корзина</h2>
+                                        <a href="#" class="favorite">Избранное</a>
+                                        <p>Товар добавлен в избранное<span></span></p>
+                                    </div>
+                                </div>
+                                <form class="cart">
+                                    <table class="cart_list">
+                                        <tr class="cart_operations">
+                                            <th><input type="checkbox"><label></label></th><th class="selected">Выбран 1 товар</th><th><a href="#" class="delete">Удалить (2)</a></th><th colspan="2"><a href="" class="add orange_button">Добавить в избранное (2)</a></th>
+                                        </tr>
+                                        <tr class="cart_list_header">
+                                            <th></th>
+                                            <th>Выбранный товар</th>
+                                            <th><p>Ширина ролика</p><p class="desc">(ширина помещения, м)</p></th>
+                                            <th><p>Погонные метры</p><p class="desc">(длина помещения, м)</p></th>
+                                            <th>Цена</th>
+                                        </tr>
+                                        <tr class="product">
+                                            <td><input type="checkbox" id="product-1"><label for="product-1"></label></td>
+                                            <td>
+                                                <img src="style/img/products/demo.jpg">
+                                                <table class="product_details">
+                                                    <tr><td colspan="2">Линолеум</td></tr>
+                                                    <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                    <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                    <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                </table>
+                                            </td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td class="price">
+                                                <p>56, 0000 кв.м</p>
+                                                <p>3000, 00 руб.</p>
+                                                <p>168 000, 00 кв.м</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="product">
+                                            <td><input type="checkbox" id="product-2"><label for="product-2"></label></td>
+                                            <td>
+                                                <img src="style/img/products/demo.jpg">
+                                                <table class="product_details">
+                                                    <tr><td colspan="2">Линолеум</td></tr>
+                                                    <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                    <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                    <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                </table>
+                                            </td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td class="price">
+                                                <p>56, 0000 кв.м</p>
+                                                <p>3000, 00 руб.</p>
+                                                <p>168 000, 00 кв.м</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="product">
+                                            <td><input type="checkbox" id="product-3"><label for="product-3"></label></td>
+                                            <td>
+                                                <img src="style/img/products/demo.jpg">
+                                                <table class="product_details">
+                                                    <tr><td colspan="2">Линолеум</td></tr>
+                                                    <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                    <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                    <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                </table>
+                                            </td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td class="price">
+                                                <p>56, 0000 кв.м</p>
+                                                <p>3000, 00 руб.</p>
+                                                <p>168 000, 00 кв.м</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="product">
+                                            <td><input type="checkbox" id="product-4"><label for="product-4"></label></td>
+                                            <td>
+                                                <img src="style/img/products/demo.jpg">
+                                                <table class="product_details">
+                                                    <tr><td colspan="2">Линолеум</td></tr>
+                                                    <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                    <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                    <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                </table>
+                                            </td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                            <td class="price">
+                                                <p>56, 0000 кв.м</p>
+                                                <p>3000, 00 руб.</p>
+                                                <p>168 000, 00 кв.м</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="content_footer">
+                            <a href="#">О компании</a>
+                            <p>|</p>
+                            <a href="#">Доставка</a>
+                            <p>|</p>
+                            <a href="#">Способы олаты</a>
+                            <p>|</p>
+                            <a href="#">Новости</a>
+                            <p>|</p>
+                            <a href="#">Контакты</a>
+                            <a class="social" href="#"><img src="/style/img/social.png"></a>
+                            <a href="#" class="developer">Разработка -</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="bottom_shadow"></div>
+    </body>
+</html>
