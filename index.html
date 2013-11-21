@@ -7,11 +7,13 @@
         
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Marmelad&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/jquery.color.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
     </head>
 
     <body>
@@ -19,7 +21,6 @@
         <!-- Окно авторизации -->
     <div class="auth_box">
         <h2>Авторизация</h2>
-        <a href="#" class="product_close"></a>
         <input type="text" id="auth_email" placeholder="e-mail">
         <input type="password" id="auth_password" placeholder="пароль">
         <a href="#" class="register">Зарегистрироваться</a><a href="#" class="remind">Напомнить пароль</a><a href="#" class="login orange_button">Вход</a>
@@ -27,25 +28,25 @@
 
     <!-- Окно регистрации -->
     <div class="register_box">
-        <a href="#" class="product_close"></a>
         <h2>Регистрация</h2>
         <form class="registration">
             <div class="row">
-                <label>Категория</label>
+                <label>Категория <span>*</span></label>
                 <input type="radio" id="retail" name="category" checked><label class="check" for="retail">Розничный покупатель</label>
                 <input type="radio" id="gross" name="category"><label class="check" for="gross">Оптовый покупатель</label>
             </div>
-            <div class="row"><label for="company_name">Название организации:</label><input type="text" class="input" id="company_name"></div>
-            <div class="row"><label for="">Юридический адрес:</label><input type="text" class="input" id=""></div>
+            <div class="row"><label for="company_name">Название организации: <span>*</span></label><input type="text" class="input" id="company_name"></div>
+            <div class="row"><label for="">Юридический адрес: <span>*</span></label><input type="text" class="input" id=""></div>
             <div class="row"><label for="">Фактический адрес:</label><input type="text" class="input" id=""><p class="notice">Можно добавить позже в настройках аккаунта</p></div>
-            <div class="row"><label for="">ИНН:</label><input type="text" class="input" id=""></div>
+            <div class="row"><label for="">ИНН: <span>*</span></label><input type="text" class="input" id=""></div>
             <div class="row"><p class="contact_name">Контактное лицо:</p></div>
-            <div class="row"><label for="">ФИО:</label><input type="text" class="input" id=""></div>
+            <div class="row"><label for="">ФИО: <span>*</span></label><input type="text" class="input" id=""></div>
             <div class="row"><label for="">Номер телефона:</label><input type="text" class="input" id=""></div>
-            <div class="row"><label for="">E-mail:</label><input type="text" class="input" id=""></div>
-            <div class="row"><label for="">Пароль:</label><input type="text" class="input" id=""></div>
-            <div class="row"><label for="">Повторите пароль:</label><input type="text" class="input" id="company_name"></div>
-            
+            <div class="row"><label for="">E-mail: <span>*</span></label><input type="text" class="input" id=""></div>
+            <div class="row"><label for="">Пароль: <span>*</span></label><input type="text" class="input" id=""></div>
+            <div class="row"><label for="">Повторите пароль: <span>*</span></label><input type="text" class="input" id="company_name"></div>
+            <div class="row"><p class="required"><span>*</span> Поля, отмеченные звездочками, обязательны для заполнения</p><a href="" class="orange_button">Зарегистрироваться</a><p class="security">Сайт даёт гарантию на неразглашение 
+личной информации.</p></div>
         </form>
     </div>
 
@@ -54,7 +55,7 @@
         <div class="header_menu">
             <a class="opt current" href="#">Опт</a>
             <a class="roznica" href="">Розница</a>
-            <a class="auth" href="#">Авторизация ></a>
+            <a class="auth" href="auth_box">Авторизация ></a>
         </div>
         <div class="width_1024">
             <div class="content">

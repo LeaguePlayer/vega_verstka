@@ -8,18 +8,22 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Marmelad&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="js/scrollbar/perfect-scrollbar.css"/>
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="js/jquery.color.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/jquery.mCustomScrollbar.js"></script>
-        <link rel="stylesheet" type="text/css" href="js/jquery.mCustomScrollbar.css"/>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jcarousellite_1.0.1.min.js"></script>
         <script src="js/slide.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/scrollbar/perfect-scrollbar.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" />
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
         <!--[if IE]><link href="css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
 
     </head>
 
-    <body scroll="no">
+    <body>
         <div class="width_920">
                 <a class="logo" href="/"></a>
                 <div class="header_menu">
@@ -102,1276 +106,57 @@
                                     </ul>
                                 </div>
                                 <div class="products">
-                                    <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img class="p_image" src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-
-                                                <div class="acc_place"><!-- acessories target --></div>
-
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="0" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="product" pid="0">
-                                        <img src="img/products/demo.jpg">
-                                        <a href="">Алладин 1</a>
-                                        <p class="desc2">Тайфун</p>
-                                        <p>3 100 руб./кв.м</p>
-                                    </div>
-                                    </div>
-                                    <div class="product" pid="1">
+                                    <div class="product">
                                         <img class="p_image" src="img/products/demo.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="1" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="2">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo1.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="2" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="3">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo2.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="3" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product" pid="4">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo3.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="4" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="5">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo4.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="5" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="6">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo5.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="6" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="7">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo6.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="7" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                    <div class="product"  pid="8">
-                                        <img class="p_image" src="img/products/demo.jpg">
+                                    <div class="product">
+                                        <img class="p_image" src="img/products/demo7.jpg">
                                         <a href="">Алладин 1</a>
                                         <p class="desc2">Тайфун</p>
                                         <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="8" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="product"  pid="9">
-                                        <img class="p_image" src="img/products/demo.jpg">
-                                        <a href="">Алладин 1</a>
-                                        <p class="desc2">Тайфун</p>
-                                        <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place">acessories target</div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="9" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="product"  pid="10">
-                                        <img class="p_image" src="img/products/demo.jpg">
-                                        <a href="">Алладин 1</a>
-                                        <p class="desc2">Тайфун</p>
-                                        <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="10" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="product"  pid="11">
-                                        <img class="p_image" src="img/products/demo.jpg">
-                                        <a href="">Алладин 1</a>
-                                        <p class="desc2">Тайфун</p>
-                                        <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="11" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="product"  pid="12">
-                                        <img class="p_image" src="img/products/demo.jpg">
-                                        <a href="">Алладин 1</a>
-                                        <p class="desc2">Тайфун</p>
-                                        <p>3 100 руб./кв.м</p>
-                                        <div class="description_bg">
-                                        <div class="description">
-                                            <div class="product_texture">
-                                                <img src="img/products/demo_texture.jpg">
-                                            </div>
-                                            <div class="product_parameters">
-                                                <div class="acc_place"><!-- acessories target --></div>
-                                                <div class="parameters_table default-skin">
-                                                    <table>
-                                                        <tr>
-                                                            <td>Дизайн представлен в ширинах, м.</td>
-                                                            <td>2.3, 3, 3.5</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Класс применения</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина покрытия общая, мм</td>
-                                                            <td>3.0</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Толщина рабочего слоя, мм</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Вес 1кв. м., кг</td>
-                                                            <td>0,20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Срок службы, лет</td>
-                                                            <td>7</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Дополнительное защитное покрытие, мм</td>
-                                                            <td>R.MAX</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Устойчивость к воздействию влаги</td>
-                                                            <td>возможно, макс +27C</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Использование для теплых полов</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td>Устойчивость к воздействию мебели на роликовых ножках</td>
-                                                            <td>средняя устойчивость</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <a href="12" class="product_close"></a>
-                                                <a href="#" class="compare"><span>добавить к сравнению</span></a>
-                                                <div class="pick">
-                                                    <a href="#" class="pick1">Подобрать плинтус</a>
-                                                    <a href="#" class="pick2">Подобрать пороги</a>
-                                                    <a href="#" class="basket_add">Положить в корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
 
-                                <!-- Аксессуары -->
-                                <div class="accessories">
-                                   <div class="slider">
-                                    <a class="item_back"></a>
-                                        <div class="wrap">
-                                            <div class="slides">
-                                               <div class="element" eid="0">   
-                                                    <img src="img/accessories/acc1.jpg">
-                                                    <p class="el_desc">Плинтус с мягким краем и центральным кабель-каналом</p>
-                                                    <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>16</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>60</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2400</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="1">   
-                                                    <img src="img/accessories/acc2.jpg">
-                                                    <p class="el_desc">Текст2 Текст2 Текст2 Текст2 Текст2 Текст2 Текст2 Текст2</p>
-                                                    <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>14</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>100</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>1500</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="2">   
-                                                    <img src="img/accessories/acc3.jpg">
-                                                    <p class="el_desc"> Текст3 Текст3 Текст3 Текст3 Текст3 Текст3 Текст3 Текст3</p>
-                                                    <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>20</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>75</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2600</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="3">   
-                                                    <img src="img/accessories/acc4.jpg">
-                                                   <p class="el_desc"> Текст4 Текст4 Текст4 Текст4 Текст4 Текст4 Текст4 Текст4</p>
-                                                   <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>15</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>30</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2000</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="4">   
-                                                    <img src="img/accessories/acc1.jpg">
-                                                   <p class="el_desc"> Текст5 Текст5 Текст5 Текст5 Текст5 Текст5 Текст5 Текст5</p>
-                                                   <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>18</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>70</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>3000</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="5">   
-                                                    <img src="img/accessories/acc2.jpg">
-                                                   <p class="el_desc"> Текст6 Текст6 Текст6 Текст6 Текст6 Текст6 Текст6 Текст6</p>
-                                                   <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>19</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>40</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2500</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="6">   
-                                                    <img src="img/accessories/acc3.jpg">
-                                                   <p class="el_desc"> Текст7 Текст7 Текст7 Текст7 Текст7 Текст7 Текст7 Текст7</p>
-                                                   <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>25</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>85</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2800</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="element" eid="7">   
-                                                    <img src="img/accessories/acc4.jpg">
-                                                   <p class="el_desc"> Текст8 Текст8 Текст8 Текст8 Текст8 Текст8 Текст8 Текст8</p>
-                                                   <p class="el_features">
-                                                        <table>
-                                                            <tr><td>Профиль, мм.</td><td>Вертикальный</td></tr>
-                                                            <tr><td>Толщина, мм.</td><td>20</td></tr>
-                                                            <tr><td>Высота, мм.</td><td>60</td></tr>
-                                                            <tr><td>Длина, мм.</td><td>2400</td></tr>
-                                                        </table>
-                                                    </p>
-                                                    <div class="materials">
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material3.jpg">
-                                                            <p class="mat_name">Blue</p>
-                                                            <p class="mat_price">162 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material4.jpg">
-                                                            <p class="mat_name">Red</p>
-                                                            <p class="mat_price">177 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material5.jpg">
-                                                            <p class="mat_name">Black</p>
-                                                            <p class="mat_price">183 руб./кв.м</p>
-                                                        </div>
-                                                        <div class="slide">
-                                                            <img src="img/accessories/material1.jpg">
-                                                            <p class="mat_name">Ясень Коньяк</p>
-                                                            <p class="mat_price">149 руб./кв.м</p>
-                                                         </div>
-                                                         <div class="slide">
-                                                            <img src="img/accessories/material2.jpg">
-                                                            <p class="mat_name">Green</p>
-                                                            <p class="mat_price">155 руб./кв.м</p>
-                                                         </div>
-                                                    </div>
-                                                </div> 
-
-                                                    </div>
-                                                </div>
-                                    <a class="item_next"></a>
-                                    <div class="show_wrap">
-                                        <div class="show_features"></div>
-                                        <div class="slider2">
-                                            <a class="item2_back"></a>
-                                                <div class="wrap">
-                                                    <div class="slides">
-                                                     <div class="slide">
-                                                        <img src="img/accessories/material1.jpg">
-                                                        <p class="mat_name">Ясень Коньяк</p>
-                                                        <p class="mat_price">149 руб./кв.м</p>
-                                                     </div>
-                                                     <div class="slide">
-                                                        <img src="img/accessories/material2.jpg">
-                                                        <p class="mat_name">Green</p>
-                                                        <p class="mat_price">155 руб./кв.м</p>
-                                                     </div>
-                                                     <div class="slide">
-                                                        <img src="img/accessories/material3.jpg">
-                                                        <p class="mat_name">Blue</p>
-                                                        <p class="mat_price">162 руб./кв.м</p>
-                                                     </div>
-                                                     <div class="slide">
-                                                        <img src="img/accessories/material4.jpg">
-                                                        <p class="mat_name">Red</p>
-                                                        <p class="mat_price">177 руб./кв.м</p>
-                                                     </div>
-                                                     <div class="slide">
-                                                        <img src="img/accessories/material5.jpg">
-                                                        <p class="mat_name">Black</p>
-                                                        <p class="mat_price">183 руб./кв.м</p>
-                                                     </div>
-                                                    </div>
-                                                </div>
-                                            <a class="item2_next"></a>
-                                        </div>
-                                        <div class="pick">
-                                            <a href="#" class="acc_back">Вернуться к описанию товара</a>
-                                            <a href="#" class="pick2">Подобрать пороги</a>
-                                            <a href="#" class="basket_add">Положить в корзину</a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-
-
+            
                                 <div class="page_navigate">
                                     <p>Показать ещё:</p>
                                     <a class="nav_current" href=""><span>20</span></a>
@@ -1397,5 +182,137 @@
                 </div>
         </div>
         <div class="bottom_shadow"></div>
-    </body>
+        <div class="descriptions">
+            <div class="prod">
+                <div class="prod_desc">
+                    <div class="prod_img"><img src="img/products/demo_full.jpg"></div>
+                    <div class="prod_det">
+                        <div class="view">
+                            <div class="prod_table">
+                                <table>
+                                    <tr><td>Дизайн представлен в ширинах, м.</td><td>2.3, 3, 3.5</td></tr>
+                                    <tr><td>Класс применения</td><td>22</td></tr>
+                                    <tr><td>Толщина покрытия общая, мм</td><td>3.0</td></tr>
+                                    <tr><td>Толщина рабочего слоя, мм</td><td>0,20</td></tr>
+                                    <tr><td>Вес 1кв. м., кг</td><td>0,20</td></tr>
+                                    <tr><td>Срок службы, лет</td><td>7</td></tr>
+                                    <tr><td>Дополнительное защитное покрытие, мм</td><td>R.MAX</td></tr>
+                                    <tr><td>Устойчивость к воздействию влаги</td><td>возможно, макс +27C</td></tr>
+                                    <tr><td>Использование для теплых полов</td><td>средняя устойчивость</td></tr>
+                                    <tr><td>Устойчивость к воздействию мебели на роликовых ножках</td><td>средняя устойчивость</td></tr>
+                                    <tr><td>Устойчивость к воздействию мебели на роликовых ножках</td><td>средняя устойчивость</td></tr>
+                                    <tr><td>Устойчивость к воздействию мебели на роликовых ножках</td><td>средняя устойчивость</td></tr>
+                                    <tr><td>Устойчивость к воздействию мебели на роликовых ножках</td><td>средняя устойчивость</td></tr>
+                                    <tr><td>Устойчивость к воздействию мебели на роликовых ножках</td><td>средняя устойчивость</td></tr>
+                                </table>
+                            </div>
+                            <a href="#" class="compare"><span>Добавить к сравнению</span></a>
+                        </div>
+                        
+                        <div class="pick_buttons">
+                            <a href="#" class="picks pick1">Подобрать плинтус</a>
+                            <a href="#" class="picks pick2">Подобрать пороги</a>
+                            <a href="" class="add_cart_button">Положить в корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Аксессуары -->
+        <div class="accessories">
+            <div class="slider">
+                <a href="#" class="prev"></a>
+                <div class="materials">
+                    <ul>
+                        <li data-id="0">
+                            <img src="img/accessories/acc1.jpg" alt="" width="165" height="60" >
+                            <p>Плинтус с мягким краем и центральным кабель-каналом</p>
+                        </li>
+                        <li data-id="1">
+                            <img src="img/accessories/acc2.jpg" alt="" width="165" height="60" >
+                            <p>Плинтус с мягким краем и центральным кабель-каналом</p>
+                        </li>
+                        <li data-id="2">
+                            <img src="img/accessories/acc3.jpg" alt="" width="165" height="60" >
+                            <p>Плинтус с мягким краем и центральным кабель-каналом</p>
+                        </li>
+                        <li data-id="3">
+                            <img src="img/accessories/acc4.jpg" alt="" width="165" height="60" >
+                            <p>Плинтус с мягким краем и центральным кабель-каналом</p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="next"></a>
+            </div>
+            <div class="plinths">
+                <div class="plinth">
+                    <table>
+                        <tr><td>Профиль, мм</td><td>Вертикальный</td></tr>
+                        <tr><td>Толщина, мм</td><td>20</td></tr>
+                        <tr><td>Высота, мм</td><td>100</td></tr>
+                        <tr><td>Длина, мм</td><td>2800</td></tr>
+                    </table>
+                </div>
+                <div class="plinth">
+                    <table>
+                        <tr><td>Профиль, мм</td><td>Вертикальный</td></tr>
+                        <tr><td>Толщина, мм</td><td>30</td></tr>
+                        <tr><td>Высота, мм</td><td>110</td></tr>
+                        <tr><td>Длина, мм</td><td>2900</td></tr>
+                    </table>
+                </div>
+                <div class="plinth">
+                    <table>
+                        <tr><td>Профиль, мм</td><td>Вертикальный</td></tr>
+                        <tr><td>Толщина, мм</td><td>40</td></tr>
+                        <tr><td>Высота, мм</td><td>120</td></tr>
+                        <tr><td>Длина, мм</td><td>3000</td></tr>
+                    </table>
+                </div>
+                <div class="plinth">
+                    <table>
+                        <tr><td>Профиль, мм</td><td>Вертикальный</td></tr>
+                        <tr><td>Толщина, мм</td><td>50</td></tr>
+                        <tr><td>Высота, мм</td><td>130</td></tr>
+                        <tr><td>Длина, мм</td><td>3100</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="slider">
+                <a href="#" class="cnext"></a>
+                <div class="pcolors">
+                    <ul>
+                        <li>
+                            <img src="img/accessories/material1.jpg">
+                            <p>Ясень Коньяк</p>
+                            <p>149 <span>руб./кв.м</span></p>
+                        </li>
+                        <li>
+                            <img src="img/accessories/material2.jpg">
+                            <p>Ясень Коньяк</p>
+                            <p>149 <span>руб./кв.м</span></p>
+                        </li>
+                        <li>
+                            <img src="img/accessories/material3.jpg">
+                            <p>Ясень Коньяк</p>
+                            <p>149 <span>руб./кв.м</span></p>
+                        </li>
+                        <li>
+                            <img src="img/accessories/material4.jpg">
+                            <p>Ясень Коньяк</p>
+                            <p>149 <span>руб./кв.м</span></p>
+                        </li>
+                        <li>
+                            <img src="img/accessories/material5.jpg">
+                            <p>Ясень Коньяк</p>
+                            <p>149 <span>руб./кв.м</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="cprev"></a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

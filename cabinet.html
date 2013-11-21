@@ -31,7 +31,7 @@
                     <div class="content">
                         <div class="content_top">
                             <div class="navigation noleft">
-                                <a href="index.html" class="home opened"></a>
+                                <a href="index.html" class="home"></a>
                                 <a href="accessories.html"><span>Линолеум</span></a>
                                 <a href="#"><span>Ламинат</span></a>
                                 <a href="#"><span>Паркет</span></a>
@@ -40,7 +40,7 @@
                                 <a href="#"><span>Пробковые покрытия</span></a>
                                 <a href="#"><span>Пороги, плинтусы</span></a>
                                 <a href="#"><span>Строй материалы</span></a>
-                                <a href="cart.html" class="cart"><span class="total">0</span></a>
+                                <a href="cart.html" class="cart opened"><span class="total">0</span></a>
                             </div>
                         </div>
                         <div class="content_catalog">
@@ -56,7 +56,11 @@
                                     <div class="breadcrumbs">
                                         <ul>
                                             <li><a href="">Главная</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Личный кабинет</a></li>
+                                            <li><a href="">Линолеум</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Полистиль</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Тайфун</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Аладин1</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Корзина</a></li>
                                         </ul>
                                     </div>
                                     <div class="favorites">
@@ -64,43 +68,97 @@
                                         <a href="#" class="favorite">Избранное</a>
                                         <a href="#" class="settings">Настройки</a>
                                     </div>
-                                    <p class="notice"><span>*&nbsp;</span>Поля, отмеченные звездочками, обязательны для заполнения</p>
-                                    <img src="img/avatar.jpg">
                                 </div>
-                                 <form class="profile"> 
-                                    <div class="limiter">
-                                        <div class="row">
-                                            <label>Категория</label>
-                                            <input type="radio" id="retail" name="category" checked><label class="check" for="retail">Розничный покупатель</label>
-                                            <input type="radio" id="gross" name="category"><label class="check" for="gross">Оптовый покупатель</label>
-                                        </div>
-                                            <div class="row"><label>Фамилия:</label><input type="text" id="surname" class="input"></div>
-                                            <div class="row"><label>Имя:</label><input type="text" id="name" class="input"></div>
-                                            <div class="row"><label>E-mail:</label><input type="text" id="email" class="input"></div>
-                                            <div class="row"><label>Пароль:</label><input type="password" id="password" class="input"></div>
-                                            <div class="row"><label>Новый пароль:</label><input type="password" id="new_password" class="input"></div>
-                                            <div class="row"><label>Повторите пароль:</label><input type="password" id="repeat_password" class="input"></div>
-                                            <div class="row"><label>Номер телефона:</label><input type="text" id="phone" class="input"></div>
-                                            <div class="row">
-                                                <label>Адрес доставки:</label>
-                                                <div class="adress">
-                                                    <div class="row"><label for="street">Улица:</label><input class="input" type="text" id="street"></div>
-                                                    <label for="home">Дом:</label><input class="input adr" type="text" id="home">
-                                                    <label for="housing">Корпус:</label><input class="input adr" type="text" id="housing">
-                                                    <label for="flat" class="flat_lb">Квартира:</label><input class="input adr" type="text" id="flat">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <label>Добавить изображение:</label>
-                                                <input type="text" class="input filename" disabled>
-                                                <input type="file" id="avatar">
-                                                <label for="avatar" class="orange_button">Обзор</label>
-                                            </div>
-                                            <div class="row">
-                                                <a href="#" class="cabinet_back">Вернуться в личный кабинет</a>
-                                                <p class="warranty">Сайт даёт гарантию на неразглашение личной информации.</p>
-                                                <input type="submit" class="save orange_button" value="Сохранить">
-                                            </div>
+                                <form>
+                                    <div class="cart">
+                                        <table class="cart_list">
+                                            <tr class="cart_operations">
+                                                <th><input type="checkbox"><label></label></th><th class="selected">Выбран 1 товар</th><th><a href="#" class="delete">Удалить (2)</a></th><th colspan="2"><a href="" class="add orange_button">Добавить в избранное (2)</a></th>
+                                            </tr>
+                                            <tr class="cart_list_header">
+                                                <th></th>
+                                                <th>Выбранный товар</th>
+                                                <th><p>Ширина ролика</p><p class="desc">(ширина помещения, м)</p></th>
+                                                <th><p>Погонные метры</p><p class="desc">(длина помещения, м)</p></th>
+                                                <th>Цена</th>
+                                            </tr>
+                                            <tr class="product">
+                                                <td><input type="checkbox" id="product-1"><label for="product-1"></label></td>
+                                                <td>
+                                                    <img src="img/products/demo.jpg">
+                                                    <table class="product_details">
+                                                        <tr><td colspan="2">Линолеум</td></tr>
+                                                        <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                        <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                        <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                    </table>
+                                                </td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td class="price">
+                                                    <p>56, 0000 кв.м</p>
+                                                    <p>3000, 00 руб.</p>
+                                                    <p>168 000, 00 кв.м</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="product">
+                                                <td><input type="checkbox" id="product-2"><label for="product-2"></label></td>
+                                                <td>
+                                                    <img src="img/products/demo.jpg">
+                                                    <table class="product_details">
+                                                        <tr><td colspan="2">Линолеум</td></tr>
+                                                        <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                        <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                        <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                    </table>
+                                                </td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td class="price">
+                                                    <p>56, 0000 кв.м</p>
+                                                    <p>3000, 00 руб.</p>
+                                                    <p>168 000, 00 кв.м</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="product">
+                                                <td><input type="checkbox" id="product-3"><label for="product-3"></label></td>
+                                                <td>
+                                                    <img src="img/products/demo.jpg">
+                                                    <table class="product_details">
+                                                        <tr><td colspan="2">Линолеум</td></tr>
+                                                        <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                        <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                        <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                    </table>
+                                                </td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td class="price">
+                                                    <p>56, 0000 кв.м</p>
+                                                    <p>3000, 00 руб.</p>
+                                                    <p>168 000, 00 кв.м</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="product">
+                                                <td><input type="checkbox" id="product-4"><label for="product-4"></label></td>
+                                                <td>
+                                                    <img src="img/products/demo.jpg">
+                                                    <table class="product_details">
+                                                        <tr><td colspan="2">Линолеум</td></tr>
+                                                        <tr><td>Название</td><td><a href="">Аладин1</a></td></tr>
+                                                        <tr><td>Коллекция</td><td><a href="">Тайфун</a></td></tr>
+                                                        <tr><td>Производитель</td><td><a href="">Полистиль</a></td></tr>
+                                                    </table>
+                                                </td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td><div class="meters"><input type="text" value="1" disabled><a href=""></a></div></td>
+                                                <td class="price">
+                                                    <p>56, 0000 кв.м</p>
+                                                    <p>3000, 00 руб.</p>
+                                                    <p>168 000, 00 кв.м</p>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </form>
                             </div>

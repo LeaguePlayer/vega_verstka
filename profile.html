@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>index.html</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Marmelad&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" />
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.color.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/slide.js"></script>
+        <!--[if IE]><link href="css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    </head>
+
+    <body scroll="no">
+        <div class="width_920">
+                <a class="logo" href="/"></a>
+                <div class="header_menu">
+                    <a class="opt current" href="#">Опт</a>
+                    <a class="roznica" href="">Розница</a>
+                    <a class="auth" href="#">Авторизация ></a>
+                </div>
+                <div class="width_920">
+                    <div class="content">
+                        <div class="content_top">
+                            <div class="navigation noleft">
+                                <a href="index.html" class="home opened"></a>
+                                <a href="accessories.html"><span>Линолеум</span></a>
+                                <a href="#"><span>Ламинат</span></a>
+                                <a href="#"><span>Паркет</span></a>
+                                <a href="#"><span>ПВХ плитка</span></a>
+                                <a href="#"><span>Паласы и ковпики</span></a>
+                                <a href="#"><span>Пробковые покрытия</span></a>
+                                <a href="#"><span>Пороги, плинтусы</span></a>
+                                <a href="#"><span>Строй материалы</span></a>
+                                <a href="cart.html" class="cart"><span class="total">0</span></a>
+                            </div>
+                        </div>
+                        <div class="content_catalog">
+                            <div class="shadow"></div>
+                            <div class="categories">
+                                <div class="search-box">
+                                    <form>
+                                        <input type="text" placeholder="Поиск..." class="search">
+                                        <button type="submit">Искать<img src="img/search.png"></button>
+                                    </form>
+                                </div>
+                                <div class="cart_head">
+                                    <div class="breadcrumbs">
+                                        <ul>
+                                            <li><a href="">Главная</a>&nbsp;&rarr;&nbsp;</li>
+                                            <li><a href="">Личный кабинет</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="favorites">
+                                        <h2>Личный кабинет</h2>
+                                        <a href="#" class="favorite">Избранное</a>
+                                        <a href="#" class="settings">Настройки</a>
+                                    </div>
+                                    <p class="notice"><span>*&nbsp;</span>Поля, отмеченные звездочками, обязательны для заполнения</p>
+                                    <img src="img/avatar.jpg">
+                                </div>
+                                 <form class="form"> 
+                                    <div class="limiter">
+                                        <div class="row">
+                                            <label>Категория</label>
+                                            <input type="radio" id="retail" name="category" checked><label class="check" for="retail">Розничный покупатель</label>
+                                            <input type="radio" id="gross" name="category"><label class="check" for="gross">Оптовый покупатель</label>
+                                        </div>
+                                            <div class="row"><label>Фамилия:</label><input type="text" id="surname" class="input"></div>
+                                            <div class="row"><label>Имя:</label><input type="text" id="name" class="input"></div>
+                                            <div class="row"><label>E-mail:</label><input type="text" id="email" class="input"></div>
+                                            <div class="row"><label>Пароль:</label><input type="password" id="password" class="input"></div>
+                                            <div class="row"><label>Новый пароль:</label><input type="password" id="new_password" class="input"></div>
+                                            <div class="row"><label>Повторите пароль:</label><input type="password" id="repeat_password" class="input"></div>
+                                            <div class="row"><label>Номер телефона:</label><input type="text" id="phone" class="input"></div>
+                                            <div class="row">
+                                                <label>Адрес доставки:</label>
+                                                <div class="adress">
+                                                    <div class="row"><label for="street">Улица:</label><input class="input" type="text" id="street"></div>
+                                                    <label for="home">Дом:</label><input class="input adr" type="text" id="home">
+                                                    <label for="housing">Корпус:</label><input class="input adr" type="text" id="housing">
+                                                    <label for="flat" class="flat_lb">Квартира:</label><input class="input adr" type="text" id="flat">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label>Добавить изображение:</label>
+                                                <input type="text" class="input filename" disabled>
+                                                <input type="file" id="avatar">
+                                                <label for="avatar" class="orange_button">Обзор</label>
+                                            </div>
+                                            <div class="row">
+                                                <a href="#" class="cabinet_back">Вернуться в личный кабинет</a>
+                                                <p class="warranty">Сайт даёт гарантию на неразглашение личной информации.</p>
+                                                <input type="submit" class="save orange_button" value="Сохранить">
+                                            </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="content_footer">
+                            <a href="#">О компании</a>
+                            <p>|</p>
+                            <a href="#">Доставка</a>
+                            <p>|</p>
+                            <a href="#">Способы олаты</a>
+                            <p>|</p>
+                            <a href="#">Новости</a>
+                            <p>|</p>
+                            <a href="#">Контакты</a>
+                            <a class="social" href="#"><img src="img/social.png"></a>
+                            <a href="#" class="developer">Разработка -</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="bottom_shadow"></div>
+    </body>
+</html>
