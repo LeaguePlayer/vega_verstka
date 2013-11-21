@@ -32,7 +32,7 @@
                         <div class="content_top">
                             <div class="navigation noleft">
                                 <a href="index.html" class="home opened"></a>
-                                <a href="accessories.html"><span>Линолеум</span></a>
+                                <a href="#"><span>Линолеум</span></a>
                                 <a href="#"><span>Ламинат</span></a>
                                 <a href="#"><span>Паркет</span></a>
                                 <a href="#"><span>ПВХ плитка</span></a>
@@ -56,45 +56,129 @@
                                     <div class="breadcrumbs">
                                         <ul>
                                             <li><a href="">Главная</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Линолеум</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Полистиль</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Тайфун</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Аладин1</a>&nbsp;&rarr;&nbsp;</li>
-                                            <li><a href="">Оформление заказа</a></li>
+                                            <li><a href="">Личный кабинет</a></li>
                                         </ul>
                                     </div>
-                                    <div class="favorites">
-                                        <h2>Форма заказа</h2>
-                                    </div>
                                     <p class="notice"><span>*&nbsp;</span>Поля, отмеченные звездочками, обязательны для заполнения</p>
+                                    <img src="img/avatar.jpg">
                                 </div>
-                                 <form class="form order"> 
-                                    <div class="limiter">
-                                        <div class="row"><label>Фамилия:</label><input type="text" id="surname" class="input"></div>
-                                        <div class="row"><label>Имя:</label><input type="text" id="name" class="input"></div>
-                                        <div class="row"><label>E-mail:</label><input type="text" id="email" class="input"><p class="error">Вы не ввели e-mail</p><a href="#" class="tip">?</a></div>
-                                        <div class="row"><label>Номер телефона:</label><input type="text" id="phone" class="input"><a href="#" class="tip">?</a></div>
+                                 <div class="form profile">
                                         <div class="row">
-                                            <label>Адрес доставки:</label>
-                                            <div class="adress">
-                                                <div class="row"><label for="street">Улица:</label><input class="input" type="text" id="street"></div>
-                                                <label for="home">Дом:</label><input class="input adr" type="text" id="home">
-                                                <label for="housing">Корпус:</label><input class="input adr" type="text" id="housing">
-                                                <label for="flat" class="flat_lb">Квартира:</label><input class="input adr" type="text" id="flat">
-                                            </div>
+                                            <label>Категория</label>
+                                            <input type="radio" id="retail" name="category" checked><label class="check" for="retail">Розничный покупатель</label>
+                                            <input type="radio" id="gross" name="category"><label class="check" for="gross">Оптовый покупатель</label>
                                         </div>
-                                        <div class="row"><label for="comment"><span class="comw">Комментарий к заказу:</span></label><textarea id="comment"></textarea><a href="#" class="tip">?</a></div>
+                                        <table class="fields">
+                                            <tr>
+                                                <td><p>Название организации:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                          <tr>
+                                                <td><p>Фактический адрес:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td rowspan="2"><p>Юридический адрес:</p></td>
+                                                <td rowspan="2"><textarea></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>ФИО директора:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                              <tr>
+                                                <td><p>Телефон компании:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Факс:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Сайт:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>ИНН:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td><p>ОГРП:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>КПП:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td><p>Р/счет:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>БИК:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td><p>Кор.счет:</p></td>
+                                                <td><input type="text" class="input"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="contact_name">Контактное лицо</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>ФИО</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Номер телефона</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>E-mail</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Старый пароль</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Новый пароль</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><p>Повторите пароль</p></td>
+                                                <td><input type="text" class="input"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                        </table>
                                         <div class="row">
-                                            <a href="#" class="cabinet_back">Вернуться в корзину</a>
-                                            <div class="warranty">
-                                                <p class="some_time">Обработка Вашего заказа займёт некоторое время.</p>
-                                                <p>Сайт даёт гарантию на неразглашение личной информации.</p>
-                                            </div>
-                                            
-                                            <input type="submit" class="orange_button" value="Отправить заявку">
+                                            <label>Добавить изображение:</label>
+                                            <input type="text" class="input filename" disabled>
+                                            <input type="file" id="avatar">
+                                            <label for="avatar" class="orange_button">Обзор</label>
                                         </div>
-                                    </div>
-                                </form>
+                                        <div class="row">
+                                            <a href="#" class="cabinet_back bask">Вернуться в корзину</a>
+                                            <p class="warranty">Сайт даёт гарантию на неразглашение личной информации.</p>
+                                            <a class="toright orange_button">Сохранить</a>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                         <div class="content_footer">

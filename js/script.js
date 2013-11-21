@@ -261,4 +261,11 @@ if($('#avatar')) {
 	});
 }
 
+$('.orange_button').click(function(){
+	$.fancybox.open($('.thanks_box'));
+	return false;
+});
+
+$('select').styler();
+
 });
